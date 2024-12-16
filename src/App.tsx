@@ -35,7 +35,10 @@ function App() {
         this:
       </p>
       <p className="text-center">
-        <img src="/lolcat.png" alt="lolcat text in rainbow colors" />
+        <img
+          src="/react-lolcat/lolcat.png"
+          alt="lolcat text in rainbow colors"
+        />
         <br />😜
       </p>
       <section className="doc-section">
