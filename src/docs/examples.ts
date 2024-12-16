@@ -1,5 +1,5 @@
 export const COMPONENT_EXAMPLE_TEXT = "Hello, world!";
-export const COMPONENT_EXAMPLE = `import { Lolcat } from "react-lolcat";
+export const COMPONENT_EXAMPLE = `import { Lolcat } from "@rewdy/react-lolcat";
 
 function Example() {
   return (
@@ -10,7 +10,7 @@ function Example() {
 `;
 
 export const HOOK_EXAMPLE_TEXT = "Oh... hello. ;)";
-export const HOOK_EXAMPLE = `import { useLolcat } from "react-lolcat";
+export const HOOK_EXAMPLE = `import { useLolcat } from "@rewdy/react-lolcat";
 
 function Example() {
   const colorized = useLolcat("${HOOK_EXAMPLE_TEXT}");

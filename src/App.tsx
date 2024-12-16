@@ -42,7 +42,7 @@ function App() {
         <h2>Installation</h2>
         <p>Install the normal way. If you use npm, it may look like this.</p>
         <pre>
-          <code>npm install react-lolcat</code>
+          <code>npm install @rewdy/react-lolcat</code>
         </pre>
         <p>
           (If you use <code>yarn</code>, <code>pnpm</code>, <code>bun</code>,
