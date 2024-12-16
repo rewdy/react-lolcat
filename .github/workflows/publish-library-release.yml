@@ -2,23 +2,32 @@ name: Publish library release
 
 on:
   push:
-    tags:
-      - 'v*.*.*'
+    branches:
+      - main
 
 jobs:
-  publish:
+  release:
+    name: Release
     runs-on: ubuntu-latest
-
     steps:
       - name: Checkout code
-        uses: actions/checkout@v2
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: "lts/*"
       - name: Install bun
         uses: oven-sh/setup-bun@v1
       - name: Install dependencies
         run: bun install
       - name: Build the project
         run: bun run build:lib
-      - name: Publish to npm
+      - name: Verify the integrity of provenance attestations and registry signatures for installed dependencies
+        run: npm audit signatures
+      - name: Release
         env:
-          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
-        run: bun publish
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
+        run: npx semantic-release
