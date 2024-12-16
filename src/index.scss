@@ -1,0 +1,25 @@
+@use "@picocss/pico/scss/pico" with (
+  $semantic-root-element: "#root",
+  $enable-semantic-container: true,
+  $theme-color: "fuchsia"
+);
+
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.doc-section {
+  padding: 2.5rem 0;
+  border-top: 2px solid var(--pico-muted-border-color);
+}
+
+@media (prefers-color-scheme: light) {
+  .pre-dark {
+    background-color: #1a1f27;
+    color: #8891a4;
+  }
+}
