@@ -1,6 +1,6 @@
 {
   "name": "@rewdy/react-lolcat",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "author": "Rewdy Meyer (https://rewdy.lol)",
   "type": "module",
   "main": "lib/index.umd.js",
