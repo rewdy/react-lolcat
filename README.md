@@ -89,4 +89,6 @@ I'll let your figure it out from there. ✌️
 * Major shout out to [lolcatjs](https://github.com/robertmarsal/lolcatjs) which is where the actual logic for colorizing the text has come from. (FYI, lolcatjs only works in your terminal, so that is why I made react-lolcat.)
 * I made this for another little project you may like: [figlet browser](https://figlet-browser.rewdy.lol/). Figlet browser gives a nice way to find a figlet font to use.
 
+---
+
 Now, go make something cool 😎
