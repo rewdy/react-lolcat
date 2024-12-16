@@ -4,7 +4,7 @@
 
 If you don't know what lolcat is, it is a tool that provides a way to display rainbow-colorized text in your terminal. Something like this:
 
-![lolcat text in rainbow colors](./public/lolcat.png) 😜
+![lolcat text in rainbow colors](https://rewdy.github.io/react-lolcat/lolcat.png) 😜
 
 ## Installation
 

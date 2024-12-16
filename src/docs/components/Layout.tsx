@@ -7,7 +7,23 @@ export const Layout: React.FC<{ children: React.ReactNode }> = ({
   return (
     <>
       <header className="site-header">
-        <h1>react-lolcat 🌈</h1>
+        <nav>
+          <ul>
+            <li>
+              <h1>react-lolcat 🌈</h1>
+            </li>
+          </ul>
+          <ul>
+            <li>
+              <a href="https://github.com/rewdy/react-lolcat">GitHub</a>
+            </li>
+            <li>
+              <a href="https://www.npmjs.com/package/@rewdy/react-lolcat">
+                npm
+              </a>
+            </li>
+          </ul>
+        </nav>
       </header>
       <main>{children}</main>
       <footer className="site-footer">
