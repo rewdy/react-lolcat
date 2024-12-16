@@ -52,9 +52,18 @@
     "vite": "^6.0.1",
     "vite-plugin-dts": "^4.3.0"
   },
+  "publishConfig": {
+    "access": "public"
+  },
   "repository": {
     "type": "git",
     "url": "https://github.com/rewdy/react-lolcat"
   },
-  "license": "MIT"
+  "license": "MIT",
+  "homepage": "https://rewdy.github.io/react-lolcat/",
+  "keywords": [
+    "react",
+    "lolcat",
+    "component"
+  ]
 }
